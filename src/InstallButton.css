@@ -1,0 +1,47 @@
+#install_button {
+    box-shadow: 2px 2px 18px;
+    font: 0.9rem sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 11px;
+    margin: 1rem;
+    opacity: .9;
+    padding: 1.2rem .7rem;
+
+    position: absolute;
+    top: 2rem;
+    left: 60%;
+
+    animation: slide-in 800ms ease-in;
+    transition: opacity 1s ease-in-out;
+    transform-origin: center;
+}
+
+
+#install_button img {
+    max-width: 3rem;
+    margin-top: 1rem;
+    z-index: 10;
+}
+
+#install_button:active {
+    box-shadow: 2px 2px 22px;
+    transform: translate(1px, 2px);
+}
+
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: .7;
+        transform: translateY(0%);
+    }
+}
