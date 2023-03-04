@@ -21,6 +21,9 @@
     transform-origin: center;
 }
 
+#install_button:hover {
+    cursor: pointer;
+}
 
 #install_button img {
     max-width: 3rem;
